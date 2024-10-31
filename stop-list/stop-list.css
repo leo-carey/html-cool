@@ -1,0 +1,44 @@
+.container {
+  width: 100%;
+}
+
+.container-first {
+  background-color: rgb(153, 147, 232);
+  height: 600px;
+}
+
+.container-last {
+  background-color: rgb(232, 147, 147);
+  height: 600px;
+}
+
+.container-list {
+  --spacing: 160px;
+
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin: var(--spacing) 0;
+  padding-left: var(--spacing);
+  padding-right: var(--spacing);
+}
+
+.fix-aside {
+  width: 50%;
+  height: 550px;
+  position: sticky;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: 280px;
+}
+
+.items-list {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.items-list > div {
+  width: 100%;
+}

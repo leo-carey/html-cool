@@ -1,0 +1,36 @@
+details {
+  width:  300px;
+  margin: 0 auto;
+}
+
+details summary {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 10px;
+  list-style: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: aqua;
+  color: #222;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out;
+}
+
+details summary span {
+  padding: 0 10px;
+}
+
+details[open] summary {
+  background-color: #eee;
+}
+
+details .content {
+  width: 100%;
+  padding: 10px;
+  background-color: #222;
+  color: #eee;
+  border-radius: 10px;
+}

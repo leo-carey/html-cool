@@ -1,0 +1,38 @@
+.slider {
+  width: 100%;
+  margin-bottom: 40px;
+  position: relative;
+}
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  border-radius: 1rem;
+  box-shadow: 0 0 5px #333;
+}
+
+#btn-prev {
+  left: calc((var(--btn-size)/2) * -1);
+}
+#btn-next {
+  right: calc((var(--btn-size)/2) * -1);
+}
+.btn {
+  width: var(--btn-size);
+  height: var(--btn-size);
+  border: 0;
+  background-color: rgb(64, 64, 170);
+  color: #f1f1f1;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #333;
+}
+.btn:hover {
+  background-color: rgb(64, 64, 170, 0.9);
+}
